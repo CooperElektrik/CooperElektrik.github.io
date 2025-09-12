@@ -7,51 +7,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
+
 <body>
-
     <h2>About me</h2>
-    <p>I'm a student with an interest in programming, philosophy, biomedical engineering, parasitology, magical girls, military fiction, and machine learning. I don't have a lot of free time.</p>
-
-    <p>I occasionally write short stories. They can be found <a href="pages/portal.html">here.</a></p>
-
-    <h2>Contact</h2>
-    <ul>
-        <li>Github: <code>CooperElektrik</code></li>
-        <li>Twitter: <code>@Jackelectricsa1</code></li>
-        <li>Discord: <code>cooper.p</code></li>
-    </ul>
+    <p>I'm a student with an interest in programming, philosophy, biomedical engineering, parasitology, magical girls, military fiction, and machine learning.</p>
 
     <h2>Projects</h2>
-    <p>I'm currently working on a simple visual novel engine!</p>
-    <p>For information on the development of it, see <a href="pages/svnengine.html">this section of the page</a></p>
+
+    <p class="admon-announce">I'm currently working on a small visual novel engine. I'll add it here once an MVP is ready.</p>
+
+    <p>My public projects can be found on my <a href="https://github.com/CooperElektrik">Github profile</a>. Below are some notable ones.</p>
+    
+    <h3 class="project">LanguageLearningApp</h3>
+
+    <p>A Qt application written using Python that helps with learning a language. It has a wide variety of exercise types that are generally useful to learners. </p>
+
+    <a href="https://github.com/CooperElektrik/LanguageLearningApp">View on Github (Archived)</a>
+    
+    <h3 class="project">editor.bat</h3>
+
+    <p>A simple and impractical terminal text editor written in Windows Batchfile.</p>
+
+    <a href="https://github.com/CooperElektrik/editor.bat">View on Github (Archived)</a>
 
     
-    <h3>LanguageLearningApp</h3>
-    <p>
-        A Qt application written using Python that helps with learning a language. It has a wide variety of exercise types that are generally useful to learners.
-    </p>
-    <p>
-        Supports ASR (Whisper, VOSK), custom courses, add courses via github (or equivalents), and more.
-    </p>
-    <p>
-        <a href="https://github.com/CooperElektrik/LanguageLearningApp" target="_blank">View on GitHub (archived)</a>
-    </p>
-    
-    
-    <h3>editor.bat</h3>
-    <p>
-        A simple and impractical terminal text editor written in Windows Batchfile.
-    </p>
-    <p>
-        <a href="https://github.com/CooperElektrik/editor.bat" target="_blank">View on GitHub (archived)</a>
-    </p>
-
-
     <h2>Books</h2>
     <p>Below is a non-exhaustive list of books I've read this year.</p>
-    <ul>
+    <ul class="books">
         <li>
             <i>Magical Girl Raising Project</i> (魔法少女育成計画)
         </li>
@@ -72,7 +57,7 @@
         </li>
     </ul>
     <p>A few books I often recommend to people:</p>
-    <ul>
+    <ul class="books">
         <li>
             <i>Sans Famille - Hector Malot</i>
         </li>
@@ -81,28 +66,9 @@
         </li>
     </ul>
     <p><b>Currently reading:</b> <i>Thất Lạc Cõi Người - Dazai Osamu</i> (人間失格)</p>
-
-    <h2>Zettelkasten and Notes</h2>
-    
-    <p>My notes on various subjects can be found <a href="pages/zettel/zettel_index.html">here.</a> </p>
-
-    <div id="footer-placeholder"></div>
-
-<script>
-    fetch('/includes/footer.html')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-        })
-        .catch(error => {
-            console.error('Error loading footer:', error);
-        });
-</script>
-
 </body>
+<footer>
+    <a href="https://github.com/CooperElektrik/CooperElektrik.github.io">source</a>
+    <p>&copy; 2025 Cooper Pham</p>
+</footer>
 </html>
