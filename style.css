@@ -2,7 +2,7 @@
 h2 {
     border-bottom: black 1px solid;
     padding-bottom: 5px;
-    text-indent: 1em;
+    text-indent: 0.2em;
     font-weight: 400;
 }
 
@@ -34,9 +34,13 @@ body {
     font-weight: 300;
     font-size: 1.1em;
     line-height: 1.7;
-    background-color: #fdfaf6;
+    background-color: #e2dcc7;
     color: #333;
     text-align: justify;
+}
+
+svg {
+    padding-right: 0.2em;
 }
 
 a {
