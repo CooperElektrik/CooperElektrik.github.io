@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(https://img4.gelbooru.com/images/dd/29/dd29a965482c88137269992f474fb8e8.gif);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.snap-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.snap-section {
+  scroll-snap-align: center;
+  border-radius: 1em;
+  background-color: rgba(255, 220, 179, 0.5);
+  backdrop-filter: blur(10px);
+  height: fit-content;
+  max-height: 90vh;
+  margin: 50vh 20vw;
+  padding: 40px;
+}
+
+.flexible {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+img {
+  height: 40vh;
+  width: auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  border-left: solid red 1px;
+  border-radius: 4px;
+  padding-left: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+ul, ol {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+  max-height: 40vh;
+  border-radius: 10px;
+  padding: 6px
+}
