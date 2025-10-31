@@ -16,14 +16,64 @@ body {
 
 .snap-section {
   scroll-snap-align: center;
+  margin: 50vh 15vw 50vh 15vw;
   border-radius: 1em;
   background-color: rgba(255, 228, 206, 0.5);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   height: fit-content;
   max-height: 95vh;
-  margin: 50vh 15vw 50vh 15vw;
   padding: 40px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+}
+
+.snap-section:hover {
+  transform: scale(1.01);
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px) sepia(50%);
+  box-shadow: rgba(255, 228, 206, 0.5) 0 0 20px;
+  transition: ease-in-out 0.2s;
+}
+
+.snap-section:not(:hover) {
+  transform: scale(1);
+  
+  background-color: rgba(255, 228, 206, 0.5);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+  transition: ease-in-out 0.2s;
+}
+
+.text-container {
+  border-radius: 0.5em;
+  cursor: pointer;
+  padding: 0 0;
+  padding-left: 20px;
+  border-left: rgb(255, 0, 0) 2px solid;
+  width: fit-content;
+}
+
+.text-container:hover {
+  border-radius: 1em;
+  border-left: rgb(255, 0, 0) 8px solid;
+  transition: ease-in-out 0.1s;
+}
+
+.text-container:not(:hover) {
+  transition: ease-in-out 0.1s;
+}
+
+#tsugu-hidden {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, margin-top 0.4s ease-in-out;
+  margin: 0;
+}
+
+.text-container:hover ~ #tsugu-hidden {
+  max-height: 100px;
+  opacity: 1;
+  margin-top: 1em; 
 }
 
 .flexible {
@@ -36,13 +86,17 @@ img {
   height: 40vh;
   width: auto;
   max-width: 100%;
+  filter: saturate(50%);
   border-radius: 10px;
 }
 
-h1 {
-  border-left: solid red 1px;
-  border-radius: 4px;
-  padding-left: 20px;
+img:hover {
+  filter: saturate(100%);
+  transition: ease-in-out 0.2s;
+}
+
+img:not(:hover) {
+  transition: ease-in-out 0.2s;
 }
 
 iframe {
@@ -91,4 +145,10 @@ textarea {
   max-height: 40vh;
   border-radius: 10px;
   padding: 6px
+}
+
+#hint {
+  font-size: 8pt;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6)
 }
