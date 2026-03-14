@@ -1,0 +1,66 @@
+#newsletter {
+    padding: 4rem 1rem;
+    background-color: #E3DBBB;
+    text-align: center;
+}
+
+#newsletter h2 {
+    font-family: "CsRollentPixel";
+    font-size: 36pt;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+#newsletter p {
+    font-family: monospace;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#newsletter input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 2px solid #AEB784;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    background-color: #F8F3E1;
+}
+
+#newsletter input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+#newsletter input:focus + button {
+    width: 120px;
+    padding: 0.75rem 1.5rem;
+}
+
+#newsletter button {
+    width: 0;
+    padding: 0.75rem 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    cursor: pointer;
+    transition: width 0.3s, padding 0.3s, background-color 0.2s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#newsletter button:hover {
+    background-color: #AEB784;
+}

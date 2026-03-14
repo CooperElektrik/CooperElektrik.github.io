@@ -1,0 +1,83 @@
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-left {
+    width: 40%;
+    height: 100%;
+    background-color: #F8F3E1;
+    background-image:
+        linear-gradient(#AEB784 1px, transparent 1px),
+        linear-gradient(90deg, #AEB784 1px, transparent 1px);
+    background-size: 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero-right {
+    width: 60%;
+    height: 100%;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero h1 {
+    font-family: "CsRollentPixel";
+    font-weight: 100;
+    font-size: 72pt;
+    margin: 0;
+    left: -4rem;
+    position: relative;
+}
+
+#hero h2 {
+    font-family: "CsRollentPixel";
+    font-weight: 100;
+    font-size: 24pt;
+    margin: 0;
+    position: relative;
+    bottom: 2rem;
+    left: 4rem;
+}
+
+#hero p {
+    font-family: "CsRollentPixel";
+    font-weight: 100;
+    font-size: 18pt;
+    margin: 0;
+    position: relative;
+    bottom: 3rem;
+    left: -3rem;
+    color: rgb(141, 0, 0);
+}
+
+.star {
+    position: relative;
+    font-size: 120px;
+    height: 0;
+    color: #000000;
+    bottom: 15rem;
+    left: 3.5rem;
+}
+
+#order-now {
+    border-bottom: 2px solid black;
+    font-size: x-large;
+    font-style: italic;
+    transform: translateX(6rem) translateY(-4rem);
+    padding: 0.2em;
+    transition: all 0.2s ease-in-out;
+}
+
+#order-now:hover {
+    background-color: black;
+    border-bottom: 2px solid rgb(255, 0, 0);
+    color: white;
+}

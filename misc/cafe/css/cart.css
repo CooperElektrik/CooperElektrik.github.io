@@ -1,0 +1,86 @@
+#cart-items {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    display: none;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#cart-items.visible {
+    display: block;
+}
+
+#cart-items h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16pt;
+    margin: 0 0 1rem 0;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-name {
+    font-family: monospace;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.cart-item-price {
+    font-family: monospace;
+    font-size: 12px;
+    color: #AEB784;
+    margin: 0.25rem 0 0 0;
+}
+
+.cart-item-remove {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0.25rem;
+    transition: color 0.2s;
+}
+
+.cart-item-remove:hover {
+    color: #c0392b;
+}
+
+.cart-total {
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 2px solid #eee;
+    text-align: right;
+}
+
+.cart-empty {
+    font-family: monospace;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    padding: 1rem;
+}
