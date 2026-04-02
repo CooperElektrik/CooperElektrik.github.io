@@ -6,7 +6,7 @@
 }
 
 #hero-left {
-    width: 40%;
+    flex-grow: 3;
     height: 100%;
     background-color: var(--color-bg-primary);
     background-image:
@@ -30,7 +30,7 @@
 }
 
 #hero-right {
-    width: 60%;
+    flex-grow: 2;
     height: 100%;
     background-image: url("../img/hero.jpg");
     background-size: cover;
@@ -44,6 +44,7 @@
     font-size: 72pt;
     margin: 0;
     color: var(--color-black);
+    transform: translate(-100px, 100px);
 }
 
 #hero h2 {
@@ -52,6 +53,7 @@
     font-size: 24pt;
     margin: 0;
     color: var(--color-black);
+    transform: translate(20px, 50px);
 }
 
 #hero p {
@@ -60,12 +62,14 @@
     font-size: 18pt;
     margin: 0;
     color: #8D0000;
+    transform: translate(-90px, 10px);
 }
 
 .star {
     font-size: 120px;
     color: var(--color-black);
     line-height: 1;
+    transform: translate(20px, -170px);
 }
 
 #order-now {
@@ -76,6 +80,7 @@
     transition: all var(--transition-normal);
     background-color: transparent;
     cursor: pointer;
+    transform: translate(60px, -150px);
 }
 
 #order-now:hover {
