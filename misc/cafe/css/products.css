@@ -1,15 +1,28 @@
+#products {
+    padding: var(--spacing-xl) var(--spacing-sm);
+    background-color: var(--color-bg-dark);
+}
+
+#products h2 {
+    font-family: var(--font-pixel);
+    font-size: 36pt;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-primary);
+}
+
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .product {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 1rem;
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-sm);
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -17,7 +30,7 @@
 }
 
 .product .product-content {
-    transition: filter 0.2s;
+    transition: filter var(--transition-normal);
 }
 
 .product:hover .product-content {
@@ -29,17 +42,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font-mono);
     font-size: 16px;
     background-color: transparent;
     padding: 0.75rem 1.5rem;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.2s, background-color 0.2s;
-    z-index: 1;
-    color: #333;
+    transition: opacity var(--transition-normal), background-color var(--transition-normal);
+    z-index: var(--z-base);
+    color: var(--color-text-primary);
 }
 
 .product:hover .add-to-cart {
@@ -51,41 +64,20 @@
     width: 100%;
     height: 150px;
     object-fit: contain;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-sm);
 }
 
 .product h3 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font-mono);
     font-size: 14pt;
-    margin: 0.5rem 0;
-    color: #333;
+    margin: var(--spacing-xs) 0;
+    color: var(--color-text-primary);
 }
 
 .product .price {
-    font-family: monospace;
+    font-family: var(--font-body);
     font-size: 16px;
-    color: #AEB784;
+    color: var(--color-bg-accent);
     font-weight: bold;
-    margin: 0.5rem 0;
-}
-
-#products {
-    padding: 3rem 1rem;
-    background-color: #89986D;
-}
-
-#products h2 {
-    font-family: "CsRollentPixel";
-    font-size: 36pt;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
-}
-
-#products .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: var(--spacing-xs) 0;
 }

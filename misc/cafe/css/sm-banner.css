@@ -16,8 +16,8 @@
     padding: 30px;
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
-    color: white;
+    border-radius: var(--radius-lg);
+    color: var(--color-white);
     position: relative;
     overflow: hidden;
     background-image: url('../img/ca_phe_tui_loc.png');
@@ -35,7 +35,7 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.6), transparent);
-    z-index: 1;
+    z-index: var(--z-base);
 }
 
 .banner-box h4,
@@ -43,7 +43,7 @@
 .banner-box span,
 .banner-box button {
     position: relative;
-    z-index: 2;
+    z-index: var(--z-base);
 }
 
 .banner-box h4 {
@@ -66,16 +66,16 @@
 .banner-box button.white {
     padding: 11px 18px;
     background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
     margin-top: 15px;
-    transition: 0.2s;
-    font-family: 'Courier New', Courier, monospace;
+    transition: var(--transition-normal);
+    font-family: var(--font-mono);
     font-size: 14px;
     cursor: pointer;
 }
 
 .banner-box button.white:hover {
-    background-color: #AEB784;
-    border: 1px solid #AEB784;
+    background-color: var(--color-bg-accent);
+    border: 1px solid var(--color-bg-accent);
 }
