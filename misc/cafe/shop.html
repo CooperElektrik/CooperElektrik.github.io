@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Cafao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-bar-logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <div id="nav-bar-buttons">
+            <a class="nav-bar-button" href="index.html">Trang chủ</a>
+            <a class="nav-bar-button" href="shop.html">Sản phẩm</a>
+            <a class="nav-bar-button" href="#features">Đặc điểm</a>
+            <a class="nav-bar-button" href="#footer">Liên hệ</a>
+        </div>
+    </nav>
+
+    <section id="shop-header">
+        <h1>Cửa Hàng</h1>
+        <p>Khám phá bộ sưu tập cà phê và đồ uống của chúng tôi</p>
+    </section>
+
+    <section id="shop-filters">
+        <div class="filter-group">
+            <label for="category-filter">Danh mục:</label>
+            <select id="category-filter">
+                <option value="all">Tất cả</option>
+                <option value="coffee">Cà phê</option>
+                <option value="soda">Soda</option>
+                <option value="alcohol">Đồ uống có cồn</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="sort-filter">Sắp xếp:</label>
+            <select id="sort-filter">
+                <option value="default">Mặc định</option>
+                <option value="price-asc">Giá: Thấp đến Cao</option>
+                <option value="price-desc">Giá: Cao đến Thấp</option>
+                <option value="name">Tên: A-Z</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="shop-products">
+        <div class="product-grid">
+            <div class="product" data-category="coffee" data-price="35000" data-name="Ca Phe Muoi">
+                <a href="product.html?id=ca-phe-muoi">
+                    <div class="product-content">
+                        <img src="img/ca_phe_muoi.png" alt="Cà Phê Muối">
+                        <h3>Cà Phê Muối</h3>
+                        <p class="price">₫35,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="coffee" data-price="30000" data-name="Ca Phe Sua">
+                <a href="product.html?id=ca-phe-sua">
+                    <div class="product-content">
+                        <img src="img/ca_phe_sua.png" alt="Cà Phê Sữa">
+                        <h3>Cà Phê Sữa</h3>
+                        <p class="price">₫30,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="coffee" data-price="45000" data-name="Ca Phe Trung">
+                <a href="product.html?id=ca-phe-trung">
+                    <div class="product-content">
+                        <img src="img/ca_phe_trung_hinh_meo.png" alt="Cà Phê Trứng">
+                        <h3>Cà Phê Trứng</h3>
+                        <p class="price">₫45,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="coffee" data-price="35000" data-name="Americano">
+                <a href="product.html?id=americano">
+                    <div class="product-content">
+                        <img src="img/americano.png" alt="Americano">
+                        <h3>Americano</h3>
+                        <p class="price">₫35,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="coffee" data-price="40000" data-name="Hot Chocolate">
+                <a href="product.html?id=hot-chocolate">
+                    <div class="product-content">
+                        <img src="img/hot_chocolate.png" alt="Sô Cô La Nóng">
+                        <h3>Sô Cô La Nóng</h3>
+                        <p class="price">₫40,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="soda" data-price="45000" data-name="Soda Chanh Leo">
+                <a href="product.html?id=soda-chanh-leo">
+                    <div class="product-content">
+                        <img src="img/passion_fruit_soda.png" alt="Soda Chanh Leo">
+                        <h3>Soda Chanh Leo</h3>
+                        <p class="price">₫45,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="soda" data-price="45000" data-name="Soda Dau">
+                <a href="product.html?id=soda-dau">
+                    <div class="product-content">
+                        <img src="img/soda_dau.png" alt="Soda Dâu Tây">
+                        <h3>Soda Dâu Tây</h3>
+                        <p class="price">₫45,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="soda" data-price="45000" data-name="Soda Viet Quat">
+                <a href="product.html?id=soda-viet-quat">
+                    <div class="product-content">
+                        <img src="img/soda_viet_quat.png" alt="Soda Việt Quất">
+                        <h3>Soda Việt Quất</h3>
+                        <p class="price">₫45,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="soda" data-price="50000" data-name="Mojito">
+                <a href="product.html?id=mojito">
+                    <div class="product-content">
+                        <img src="img/mojito.png" alt="Mojito">
+                        <h3>Mojito</h3>
+                        <p class="price">₫50,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="soda" data-price="55000" data-name="Butter Beer">
+                <a href="product.html?id=butter-beer">
+                    <div class="product-content">
+                        <img src="img/butter_beer.png" alt="Bia Bơ">
+                        <h3>Bia Bơ</h3>
+                        <p class="price">₫55,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="alcohol" data-price="120000" data-name="Ruou Gin">
+                <a href="product.html?id=ruou-gin">
+                    <div class="product-content">
+                        <img src="img/ruou_gin.png" alt="Rượu Gin">
+                        <h3>Rượu Gin</h3>
+                        <p class="price">₫120,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="alcohol" data-price="150000" data-name="Ruou Sake">
+                <a href="product.html?id=ruou-sake">
+                    <div class="product-content">
+                        <img src="img/ruou_sake.png" alt="Rượu Sake">
+                        <h3>Rượu Sake</h3>
+                        <p class="price">₫150,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product" data-category="alcohol" data-price="130000" data-name="Vodka">
+                <a href="product.html?id=vodka">
+                    <div class="product-content">
+                        <img src="img/vodka.png" alt="Vodka">
+                        <h3>Vodka</h3>
+                        <p class="price">₫130,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="feature">
+            <i class="fas fa-coffee"></i>
+            <h3>Freshly Brewed</h3>
+            <p>Hạt rang xay mỗi ngày</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-leaf"></i>
+            <h3>Organic Beans</h3>
+            <p>100% nguồn gốc bền vững</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-mug-hot"></i>
+            <h3>Expert Baristas</h3>
+            <p>Thợ pha chế chuyên nghiệp</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-wifi"></i>
+            <h3>Free WiFi</h3>
+            <p>Luôn kết nối</p>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafao</h3>
+                <p>Quán cà phê yêu thích của bạn</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>123 Đường Cà Phê</p>
+                <p>contact@cafao.com</p>
+                <p>+84 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cafao. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <div id="cart-items">
+        <h3>Giỏ hàng</h3>
+        <div id="cart-items-list">
+            <p class="cart-empty">Giỏ hàng trống</p>
+        </div>
+        <div class="cart-total" id="cart-total">Tổng: ₫0</div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

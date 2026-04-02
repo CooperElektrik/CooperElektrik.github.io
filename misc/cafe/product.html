@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Cafao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-bar-logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <div id="nav-bar-buttons">
+            <a class="nav-bar-button" href="index.html">Trang chủ</a>
+            <a class="nav-bar-button" href="shop.html">Sản phẩm</a>
+            <a class="nav-bar-button" href="#related">Sản phẩm liên quan</a>
+            <a class="nav-bar-button" href="#footer">Liên hệ</a>
+        </div>
+    </nav>
+
+    <section id="product-detail">
+        <div class="product-detail-container">
+            <div class="product-detail-image">
+                <img src="img/ca_phe_muoi.png" alt="Cà Phê Muối" id="detail-image">
+            </div>
+            <div class="product-detail-info">
+                <h1 id="detail-name">Cà Phê Muối</h1>
+                <p class="detail-price" id="detail-price">₫35,000</p>
+                <p class="detail-description" id="detail-description">
+                    Cà phê muối là thức uống đặc trưng với vị đắng nhẹ của cà phê nguyên chất, 
+                    hòa quyện cùng vị mặn tinh tế của muối biển. Sự kết hợp độc đáo này tạo nên 
+                    hương vị đậm đà, khó quên.
+                </p>
+                <div class="detail-quantity">
+                    <label for="quantity">Số lượng:</label>
+                    <div class="quantity-control">
+                        <button type="button" id="quantity-minus">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="99">
+                        <button type="button" id="quantity-plus">+</button>
+                    </div>
+                </div>
+                <div class="detail-actions">
+                    <button class="btn-add-to-cart" id="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i> Thêm vào giỏ
+                    </button>
+                    <button class="btn-back-to-shop" onclick="window.location.href='shop.html'">
+                        <i class="fas fa-arrow-left"></i> Quay lại
+                    </button>
+                </div>
+                <div class="detail-meta">
+                    <p><strong>Mã sản phẩm:</strong> <span id="detail-sku">CPM-001</span></p>
+                    <p><strong>Danh mục:</strong> <span id="detail-category">Cà phê</span></p>
+                    <p><strong>Tình trạng:</strong> <span class="in-stock">Còn hàng</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product-features">
+        <div class="feature-box">
+            <i class="fas fa-leaf"></i>
+            <h3>Nguyên liệu tự nhiên</h3>
+            <p>100% cà phê nguyên chất từ vùng Tây Nguyên</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-medal"></i>
+            <h3>Chất lượng cao</h3>
+            <p>Quy trình rang xay hiện đại, giữ trọn hương vị</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-truck"></i>
+            <h3>Giao hàng nhanh</h3>
+            <p>Miễn phí giao hàng trong nội thành</p>
+        </div>
+    </section>
+
+    <section id="related">
+        <h2>Sản Phẩm Liên Quan</h2>
+        <div class="product-grid">
+            <div class="product">
+                <a href="product.html?id=ca-phe-sua">
+                    <div class="product-content">
+                        <img src="img/ca_phe_sua.png" alt="Cà Phê Sữa">
+                        <h3>Cà Phê Sữa</h3>
+                        <p class="price">₫30,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <a href="product.html?id=ca-phe-trung">
+                    <div class="product-content">
+                        <img src="img/ca_phe_trung_hinh_meo.png" alt="Cà Phê Trứng">
+                        <h3>Cà Phê Trứng</h3>
+                        <p class="price">₫45,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <a href="product.html?id=americano">
+                    <div class="product-content">
+                        <img src="img/americano.png" alt="Americano">
+                        <h3>Americano</h3>
+                        <p class="price">₫35,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <a href="product.html?id=hot-chocolate">
+                    <div class="product-content">
+                        <img src="img/hot_chocolate.png" alt="Sô Cô La Nóng">
+                        <h3>Sô Cô La Nóng</h3>
+                        <p class="price">₫40,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafao</h3>
+                <p>Quán cà phê yêu thích của bạn</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>123 Đường Cà Phê</p>
+                <p>contact@cafao.com</p>
+                <p>+84 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cafao. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <div id="cart-items">
+        <h3>Giỏ hàng</h3>
+        <div id="cart-items-list">
+            <p class="cart-empty">Giỏ hàng trống</p>
+        </div>
+        <div class="cart-total" id="cart-total">Tổng: ₫0</div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
