@@ -23,12 +23,17 @@
     background-color: #E3DBBBAA;
 }
 
+#mobile-nav-button {
+    display: none;
+}
+
 #nav-bar-buttons {
     display: flex;
     flex-direction: row;
     padding-right: var(--spacing-sm);
     gap: var(--spacing-sm);
     align-items: center;
+    transition: 0.2s ease-in-out;
 }
 
 #nav-bar-logo img {
