@@ -167,6 +167,8 @@
 
 /* MAP PLACEHOLDER */
 .contact-map {
+    max-width: 1200px;
+    margin: var(--spacing-xl) auto 0;
     background-color: var(--color-bg-secondary);
     border-radius: var(--radius-md);
     height: 250px;

@@ -56,15 +56,22 @@ document.addEventListener('DOMContentLoaded', function () {
         var shipping = total >= 200000 ? 0 : 20000;
         var grandTotal = total + shipping;
 
-        var subtotalRow = document.querySelector('.cart-totals-row:not(.total):nth-child(1) span:last-child');
-        var shippingRow = document.querySelector('.cart-totals-row:not(.total):nth-child(2) span:last-child');
-        var totalRow = document.querySelector('.cart-totals-row.total span:last-child');
-
-        if (subtotalRow) subtotalRow.textContent = formatPrice(total);
-        if (shippingRow) {
-            shippingRow.textContent = shipping === 0 ? 'Miễn phí' : formatPrice(shipping);
+        var totalsRows = document.querySelectorAll('.cart-totals-row');
+        if (totalsRows.length >= 3) {
+            // Row 1: Tạm tính (subtotal before shipping)
+            var subtotalSpan = totalsRows[0].querySelector('span:last-child');
+            if (subtotalSpan) subtotalSpan.textContent = formatPrice(total);
+            
+            // Row 2: Phí giao hàng
+            var shippingSpan = totalsRows[1].querySelector('span:last-child');
+            if (shippingSpan) {
+                shippingSpan.textContent = shipping === 0 ? 'Miễn phí' : formatPrice(shipping);
+            }
+            
+            // Row 3: Tổng cộng (grand total)
+            var totalSpan = totalsRows[2].querySelector('span:last-child');
+            if (totalSpan) totalSpan.textContent = formatPrice(grandTotal);
         }
-        if (totalRow) totalRow.textContent = formatPrice(grandTotal);
 
         // Bind quantity buttons
         document.querySelectorAll('.qty-minus').forEach(function (btn) {

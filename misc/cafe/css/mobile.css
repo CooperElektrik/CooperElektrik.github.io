@@ -15,6 +15,10 @@
     .banner-box {
         height: 250px;
     }
+
+    .blog-detail-image {
+        max-height: 350px;
+    }
 }
 
 @media screen and (max-width: 512px) {
@@ -218,5 +222,9 @@
 
     .social-icons {
         justify-content: center;
+    }
+
+    .blog-detail-image {
+        max-height: 250px;
     }
 }

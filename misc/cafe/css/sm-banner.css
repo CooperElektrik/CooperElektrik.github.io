@@ -22,6 +22,7 @@
     overflow: hidden;
     background-image: url('../img/ca_phe_tui_loc.png');
     cursor: pointer;
+    text-decoration: none;
     transition: transform var(--transition-slow), box-shadow var(--transition-slow);
 }
 
@@ -31,7 +32,7 @@
 }
 
 .banner-box2 {
-    background-image: url('../img/sake.png');
+    background-image: url('../img/sake.jpg');
 }
 
 .banner-box::before {
