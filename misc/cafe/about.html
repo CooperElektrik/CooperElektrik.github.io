@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu - Cafao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-bar-logo">
+            <img src="img/logo.png" alt="Logo">
+            <button id="mobile-nav-button"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="nav-bar-buttons">
+            <a class="nav-bar-button" href="index.html">Trang chủ</a>
+            <a class="nav-bar-button" href="shop.html">Sản phẩm</a>
+            <a class="nav-bar-button" href="event_detail.html">Sự kiện</a>
+            <a class="nav-bar-button" href="blog.html">Blog</a>
+            <a class="nav-bar-button" href="about.html">Giới thiệu</a>
+            <a class="nav-bar-button" href="contact.html">Liên hệ</a>
+            <a class="nav-bar-button nav-cart-link" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="nav-cart-count" id="nav-cart-count">0</span></a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="about-hero" class="page-hero">
+        <div class="about-hero-container">
+            <span class="hero-subtitle">VỀ CHÚNG TÔI</span>
+            <h1>Câu Chuyện Cafao</h1>
+            <p>Từ tình yêu cà phê Việt đến không gian thưởng thức hiện đại.</p>
+        </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section id="about-story">
+        <div class="about-story-container">
+            <div class="about-story-image">
+                <img src="img/hero.jpg" alt="Cafao Story">
+            </div>
+            <div class="about-story-text">
+                <h2>Hành Trình Bắt Đầu Từ Đâu</h2>
+                <p>Cafao được thành lập vào năm 2024 với sứ mệnh mang hương vị cà phê Việt Nam nguyên bản đến gần hơn với thế hệ trẻ. Chúng tôi tin rằng mỗi tách cà phê là một câu chuyện — từ nông trường đến bàn tay người pha chế.</p>
+                <p>Bắt đầu từ một quán nhỏ tại phố cà phê Hà Nội, Cafao nhanh chóng trở thành điểm đến yêu thích của những tín đồ cà phê nhờ chất lượng ổn định, không gian ấm cúng và phong cách phục vụ tận tâm.</p>
+                <p>Hiện tại, Cafao không chỉ là quán cà phê mà còn là thương hiệu phân phối cà phê rang xay, túi lọc và các dòng đồ uống đặc sản đến hàng ngàn khách hàng trên khắp cả nước.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section id="about-values">
+        <div class="values-header">
+            <h2>Giá Trị Cốt Lõi</h2>
+        </div>
+        <div class="values-grid">
+            <div class="value-item">
+                <i class="fas fa-seedling"></i>
+                <h3>Nguồn Gốc Bền Vững</h3>
+                <p>100% hạt cà phê từ nông trường Tây Nguyên, canh tác hữu cơ và thu hoạch thủ công.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-heart"></i>
+                <h3>Đam Mê & Tận Tâm</h3>
+                <p>Mỗi nhân viên tại Cafao đều là một người yêu cà phê thực thụ, luôn sẵn sàng chia sẻ.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-flask"></i>
+                <h3>Sáng Tạo Không Ngừng</h3>
+                <p>Liên tục nghiên cứu và ra mắt các dòng sản phẩm mới, đáp ứng xu hướng thị trường.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-handshake"></i>
+                <h3>Cộng Đồng</h3>
+                <p>Xây dựng cộng đồng yêu cà phê, kết nối khách hàng và nông dân qua từng sản phẩm.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafao</h3>
+                <p>Quán cà phê yêu thích của bạn</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>123 Đường Cà Phê</p>
+                <p>contact@cafao.com</p>
+                <p>+84 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cafao. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <div id="cart-items">
+        <h3>Giỏ hàng</h3>
+        <div id="cart-items-list">
+            <p class="cart-empty">Giỏ hàng trống</p>
+        </div>
+        <div class="cart-total" id="cart-total">Tổng: ₫0</div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

@@ -33,7 +33,7 @@
     padding-right: var(--spacing-sm);
     gap: var(--spacing-sm);
     align-items: center;
-    transition: 0.2s ease-in-out;
+    transition: var(--transition-normal);
 }
 
 #nav-bar-logo img {
@@ -53,8 +53,8 @@
     color: var(--color-white);
     background: var(--color-footer);
     text-decoration: none;
-    border-bottom: 2px solid #ff0000;
-    border-radius: 5px;
+    border-bottom: 2px solid var(--color-accent-red);
+    border-radius: var(--radius-sm);
 }
 
 .nav-bar-button:active {
@@ -62,5 +62,5 @@
     background: var(--color-white);
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    border-radius: 50px;
+    border-radius: var(--radius-full);
 }

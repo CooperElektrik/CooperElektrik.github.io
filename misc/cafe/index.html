@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,11 @@
         <div id="nav-bar-buttons">
             <a class="nav-bar-button" href="index.html">Trang chủ</a>
             <a class="nav-bar-button" href="shop.html">Sản phẩm</a>
-            <a class="nav-bar-button" href="#footer">Liên hệ</a>
+            <a class="nav-bar-button" href="event_detail.html">Sự kiện</a>
+            <a class="nav-bar-button" href="blog.html">Blog</a>
+            <a class="nav-bar-button" href="about.html">Giới thiệu</a>
+            <a class="nav-bar-button" href="contact.html">Liên hệ</a>
+            <a class="nav-bar-button nav-cart-link" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="nav-cart-count" id="nav-cart-count">0</span></a>
         </div>
     </nav>
     
@@ -127,18 +131,18 @@
     </section>
 
     <section id="sm-banner">
-        <div class="banner-box">
+        <a href="promotion.html" class="banner-box" style="text-decoration:none;">
             <h4>Ưu đãi cực lớn</h4>
             <h2>Mua 1 tặng 1</h2>
             <span>Sản phẩm cà phê túi lọc mới nhất</span>
             <button class="white">Xem thêm</button>
-        </div>
-        <div class="banner-box banner-box2">
+        </a>
+        <a href="event_detail.html" class="banner-box banner-box2" style="text-decoration:none;">
             <h4>Mùa lễ hội</h4>
             <h2>Sắp ra mắt</h2>
             <span>Giảm giá 50% cho các loại rượu Sake</span>
             <button class="white">Bộ sưu tập</button>
-        </div>
+        </a>
     </section>
 
     <section id="newsletter">
@@ -184,5 +188,6 @@
         <div class="cart-total" id="cart-total">Tổng: ₫0</div>
     </div>
     <script type="module" src="script.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Cafao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-bar-logo">
+            <img src="img/logo.png" alt="Logo">
+            <button id="mobile-nav-button"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="nav-bar-buttons">
+            <a class="nav-bar-button" href="index.html">Trang chủ</a>
+            <a class="nav-bar-button" href="shop.html">Sản phẩm</a>
+            <a class="nav-bar-button" href="event_detail.html">Sự kiện</a>
+            <a class="nav-bar-button" href="blog.html">Blog</a>
+            <a class="nav-bar-button" href="about.html">Giới thiệu</a>
+            <a class="nav-bar-button" href="contact.html">Liên hệ</a>
+            <a class="nav-bar-button nav-cart-link" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="nav-cart-count" id="nav-cart-count">0</span></a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="blog-hero" class="page-hero">
+        <div class="blog-hero-container">
+            <span class="hero-subtitle">BLOG & TIN TỨC</span>
+            <h1>Blog Cafao</h1>
+            <p>Khám phá câu chuyện cà phê, mẹo pha chế và xu hướng mới.</p>
+        </div>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section id="blog-posts">
+        <div class="blog-grid">
+            <!-- Bài 1 -->
+            <article class="blog-card">
+                <div class="blog-card-image">
+                    <img src="img/hero.jpg" alt="Câu chuyện hạt cà phê">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-date">15/03/2026</span>
+                    <h3>Hành Trình Từ Hạt Cà Phê Đến Tách Uống</h3>
+                    <p>Khám phá quy trình từ khi thu hoạch tại nông trường Tây Nguyên đến khi trở thành tách cà phê thơm ngon trên bàn của bạn. Mỗi bước đều là nghệ thuật.</p>
+                    <a href="#" class="blog-read-more">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Bài 2 -->
+            <article class="blog-card">
+                <div class="blog-card-image">
+                    <img src="img/ca_phe_muoi.png" alt="Cà phê muối">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-date">02/03/2026</span>
+                    <h3>Bí Quyết Pha Cà Phê Muối Hoàn Hảo</h3>
+                    <p>Cà phê muối đang là xu hướng được yêu thích nhất. Học cách cân bằng vị đắng, mặn và ngọt để tạo nên tách cà phê đậm đà khó quên.</p>
+                    <a href="#" class="blog-read-more">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Bài 3 -->
+            <article class="blog-card">
+                <div class="blog-card-image">
+                    <img src="img/ca_phe_trung_hinh_meo.png" alt="Cà phê trứng">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-date">18/02/2026</span>
+                    <h3>Cà Phê Trứng Hà Nội - Di Sản Ẩm Thực</h3>
+                    <p>Từ quán Giảng nổi tiếng đến phiên bản hiện đại, cà phê trứng đã trở thành biểu tượng văn hóa. Tìm hiểu lịch sử và cách thưởng thức đúng điệu.</p>
+                    <a href="#" class="blog-read-more">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Bài 4 -->
+            <article class="blog-card">
+                <div class="blog-card-image">
+                    <img src="img/ca_phe_tui_loc.png" alt="Cà phê túi lọc">
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-date">05/02/2026</span>
+                    <h3>Top 5 Loại Cà Phê Túi Lọc Ngon Nhất 2026</h3>
+                    <p>Review chi tiết 5 loại cà phê túi lọc tốt nhất cho dân văn phòng: tiện lợi, nhanh gọn mà vẫn giữ được hương vị đậm đà của pha phin truyền thống.</p>
+                    <a href="#" class="blog-read-more">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="blog-newsletter">
+        <div id="newsletter">
+            <h2>Newsletter</h2>
+            <p>Nhận cập nhật và bài viết mới nhất</p>
+            <form>
+                <input type="email" placeholder="Nhập email của bạn">
+                <button type="submit">Đăng ký</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafao</h3>
+                <p>Quán cà phê yêu thích của bạn</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>123 Đường Cà Phê</p>
+                <p>contact@cafao.com</p>
+                <p>+84 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cafao. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <div id="cart-items">
+        <h3>Giỏ hàng</h3>
+        <div id="cart-items-list">
+            <p class="cart-empty">Giỏ hàng trống</p>
+        </div>
+        <div class="cart-total" id="cart-total">Tổng: ₫0</div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

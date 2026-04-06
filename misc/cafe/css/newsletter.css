@@ -5,7 +5,7 @@
 }
 
 #newsletter h2 {
-    font-family: var(--font-pixel);
+    font-family: var(--font-heading);
     font-size: 36pt;
     margin-bottom: var(--spacing-xs);
     color: var(--color-text-primary);
@@ -33,6 +33,7 @@
     font-family: var(--font-body);
     font-size: 14px;
     background-color: var(--color-bg-primary);
+    transition: border-color var(--transition-normal);
 }
 
 #newsletter input:focus {
@@ -40,20 +41,34 @@
     border-color: var(--color-text-primary);
 }
 
+/* Button: hidden by default, revealed on input focus */
 #newsletter button {
-    padding: 0.75rem 1.5rem;
     background-color: var(--color-text-primary);
     color: var(--color-white);
     border: none;
     border-radius: var(--radius-sm);
     font-family: var(--font-mono);
     font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color var(--transition-normal), padding var(--transition-slow);
     white-space: nowrap;
+    opacity: 0;
+    overflow: hidden;
+    max-width: 0;
+    padding: 0.75rem 0;
+    transition:
+        max-width var(--transition-slow),
+        opacity var(--transition-normal),
+        background-color var(--transition-normal),
+        padding var(--transition-slow);
 }
 
 #newsletter button:hover {
     background-color: var(--color-bg-accent);
-    padding: 0.75rem 2rem;
+}
+
+#newsletter input:focus ~ button {
+    opacity: 1;
+    max-width: 200px;
+    padding: 0.75rem 1.5rem;
 }

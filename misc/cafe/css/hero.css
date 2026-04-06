@@ -61,7 +61,7 @@
     font-weight: 100;
     font-size: 18pt;
     margin: 0;
-    color: #8D0000;
+    color: var(--color-text-accent);
     transform: translate(-90px, 10px);
 }
 
@@ -85,6 +85,6 @@
 
 #order-now:hover {
     background-color: var(--color-black);
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 2px solid var(--color-accent-red);
     color: var(--color-white);
 }

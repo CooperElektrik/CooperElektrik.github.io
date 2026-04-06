@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ưu Đãi Đặc Biệt - Cafao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/promotion.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-bar-logo">
+            <img src="img/logo.png" alt="Logo">
+            <button id="mobile-nav-button"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="nav-bar-buttons">
+            <a class="nav-bar-button" href="index.html">Trang chủ</a>
+            <a class="nav-bar-button" href="shop.html">Sản phẩm</a>
+            <a class="nav-bar-button" href="event_detail.html">Sự kiện</a>
+            <a class="nav-bar-button" href="blog.html">Blog</a>
+            <a class="nav-bar-button" href="about.html">Giới thiệu</a>
+            <a class="nav-bar-button" href="contact.html">Liên hệ</a>
+            <a class="nav-bar-button nav-cart-link" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="nav-cart-count" id="nav-cart-count">0</span></a>
+        </div>
+    </nav>
+
+    <header id="promotion-hero" class="page-hero">
+        <div class="hero-container">
+            <span class="hero-subtitle">ƯU ĐÃI ĐẶC BIỆT</span>
+            <h1>Chương Trình Ưu Đãi</h1>
+        </div>
+    </header>
+
+    <section id="drip-coffee" class="promo-detail">
+        <div class="promo-image">
+            <img src="img/ca_phe_tui_loc.png" alt="Cà phê túi lọc">
+        </div>
+        <div class="promo-text">
+            <span class="tag">HOT DEAL</span>
+            <h2>Mua 1 Tặng 1: Cà Phê Túi Lọc (Drip Bag)</h2>
+            <p>Trải nghiệm hương vị cà phê nguyên chất mọi lúc mọi nơi với dòng sản phẩm túi lọc mới nhất. Với quy trình rang xay tỉ mỉ và đóng gói hiện đại, chúng tôi cam kết giữ trọn hương vị ban đầu.</p>
+            <ul>
+                <li><strong>Thời gian:</strong> Áp dụng đến hết tháng này.</li>
+                <li><strong>Sản phẩm:</strong> Arabica Cầu Đất & Robusta Honey.</li>
+                <li><strong>Đặc biệt:</strong> Tặng kèm 1 ly giữ nhiệt mini cho hóa đơn trên 500k.</li>
+            </ul>
+            <button>Mua Ngay</button>
+        </div>
+    </section>
+
+    <section id="sake-festival" class="promo-detail reverse">
+        <div class="promo-text">
+            <span class="tag">COMING SOON</span>
+            <h2>Mùa Lễ Hội Sake - Giảm Giá 50%</h2>
+            <p>Chào đón không khí lễ hội với bộ sưu tập rượu Sake cao cấp được nhập khẩu trực tiếp từ Nhật Bản. Đây là cơ hội duy nhất để thưởng thức tinh hoa văn hóa Nhật với mức giá ưu đãi chưa từng có.</p>
+            <ul>
+                <li><strong>Giảm 50%</strong> cho các dòng Junmai và Ginjo.</li>
+                <li><strong>Tặng kèm</strong> set đồ nhắm truyền thống khi đi nhóm 4 người.</li>
+                <li><strong>Sự kiện:</strong> Đêm nhạc Acoustic vào mỗi tối thứ 7.</li>
+            </ul>
+            <button class="white">Đặt Chỗ Trước</button>
+        </div>
+        <div class="promo-image">
+            <img src="img/sake.png" alt="Sake Festival">
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafao</h3>
+                <p>Quán cà phê yêu thích của bạn</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>123 Đường Cà Phê</p>
+                <p>contact@cafao.com</p>
+                <p>+84 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cafao. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <div id="cart-items">
+        <h3>Giỏ hàng</h3>
+        <div id="cart-items-list">
+            <p class="cart-empty">Giỏ hàng trống</p>
+        </div>
+        <div class="cart-total" id="cart-total">Tổng: ₫0</div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

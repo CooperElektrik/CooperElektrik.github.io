@@ -53,27 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Add to cart functionality
-    document.querySelectorAll('.add-to-cart').forEach(function(button) {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            const product = this.closest('.product');
-            const name = product.querySelector('h3').textContent;
-            const priceText = product.querySelector('.price').textContent;
-            const priceNum = parseInt(priceText.replace(/[₫,]/g, ''));
-            
-            // Trigger cart add (from script.js)
-            if (typeof addToCart === 'function') {
-                addToCart(name, priceText, priceNum);
-            }
-            
-            // Visual feedback
-            this.textContent = 'Đã thêm!';
-            setTimeout(() => {
-                this.textContent = 'Thêm vào giỏ';
-            }, 1000);
-        });
-    });
+    // "Add to cart" is handled by CafaoCart.bindAddToCartButtons() in script.js
+    // to avoid duplicate event listeners causing double-adds.
 });

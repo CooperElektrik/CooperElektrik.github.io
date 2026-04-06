@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự Kiện & Ưu Đãi - Cafao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/event-detail.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-bar-logo">
+            <img src="img/logo.png" alt="Logo">
+            <button id="mobile-nav-button"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="nav-bar-buttons">
+            <a class="nav-bar-button" href="index.html">Trang chủ</a>
+            <a class="nav-bar-button" href="#current-events">Đang diễn ra</a>
+            <a class="nav-bar-button" href="#upcoming-events">Sắp ra mắt</a>
+            <a class="nav-bar-button" href="blog.html">Blog</a>
+            <a class="nav-bar-button" href="about.html">Giới thiệu</a>
+            <a class="nav-bar-button" href="contact.html">Liên hệ</a>
+            <a class="nav-bar-button nav-cart-link" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="nav-cart-count" id="nav-cart-count">0</span></a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="pg-event-hero" class="page-hero">
+        <div class="hero-container">
+            <span class="hero-subtitle">WELCOME TO CAFAO</span>
+            <h1 class="hero-title">Sự Kiện & Ưu Đãi</h1>
+            <p class="hero-description">Những khoảnh khắc đặc biệt tại Cafao.</p>
+        </div>
+    </section>
+
+    <!-- CURRENT EVENTS (Z-Pattern Banners) -->
+    <section id="current-events" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Đang Diễn Ra</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="event-list">
+                <!-- Event 1 -->
+                <article class="event-item">
+                    <div class="event-content">
+                        <span class="event-tag">Hot Deal</span>
+                        <h3>Night Owl - Giảm 30%</h3>
+                        <p>Dành riêng cho những người bạn thức khuya khi hóa đơn từ 100k.</p>
+                        <a href="promotion.html" class="btn-primary">Đặt bàn ngay</a>
+                    </div>
+                    <div class="event-image">
+                        <img src="img/sushi_event.jpg" alt="Promotion">
+                    </div>
+                </article>
+
+                <!-- Event 2 (Reverse) -->
+                <article class="event-item reverse">
+                    <div class="event-content">
+                        <span class="event-tag">New Release</span>
+                        <h3>Mua 1 Tặng 1 Túi Lọc</h3>
+                        <p>Trải nghiệm dòng cà phê túi lọc Arabica thượng hạng mới nhất.</p>
+                        <a href="promotion.html" class="btn-primary">Mua ngay</a>
+                    </div>
+                    <div class="event-image">
+                        <img src="img/20-melbourne-coffee-expo.jpg" alt="Promotion">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPCOMING EVENTS (Grid Cards) -->
+    <section id="upcoming-events" class="section-padding bg-cream">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sắp Diễn Ra</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="event-grid">
+                <div class="event-card">
+                    <div class="card-img-wrapper">
+                        <img src="img/artofsake.jpg" alt="Sake Festival">
+                        <div class="date-badge">01.04</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Mùa Lễ Hội Sake</h3>
+                        <p>Đắm chìm trong văn hóa Nhật Bản với ưu đãi 50%.</p>
+                        <a href="promotion.html#sake-festival" class="btn-text">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="card-img-wrapper">
+                        <img src="img/latteworkshop.png" alt="Workshop">
+                        <div class="date-badge">15.05</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Workshop: Latte Art</h3>
+                        <p>Học cách tạo hình trên tách cà phê cùng chuyên gia.</p>
+                        <a href="#" class="btn-text">Đăng ký ngay <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cafao</h3>
+                <p>Quán cà phê yêu thích của bạn</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>123 Đường Cà Phê</p>
+                <p>contact@cafao.com</p>
+                <p>+84 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cafao. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <div id="cart-items">
+        <h3>Giỏ hàng</h3>
+        <div id="cart-items-list">
+            <p class="cart-empty">Giỏ hàng trống</p>
+        </div>
+        <div class="cart-total" id="cart-total">Tổng: ₫0</div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/event-detail.js"></script>
+</body>
+</html>

@@ -38,11 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
             const priceText = document.getElementById('detail-price').textContent;
             const priceNum = parseInt(priceText.replace(/[₫,]/g, ''));
             const quantity = parseInt(quantityInput.value) || 1;
+            const imageEl = document.getElementById('detail-image');
+            const image = imageEl ? imageEl.getAttribute('src') : '';
 
-            // Add multiple items based on quantity
-            for (let i = 0; i < quantity; i++) {
-                if (typeof addToCart === 'function') {
-                    addToCart(name, priceText, priceNum);
+            const productId = document.title.replace(' - Cafao', '').toLowerCase()
+                .replace(/\s+/g, '-').replace(/[^a-z0-9\-àáảãạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđ]/g, '');
+
+            if (typeof CafaoCart !== 'undefined') {
+                CafaoCart.addToCart(
+                    { id: productId, name: name, price: priceText, priceNum: priceNum, image: image },
+                    quantity
+                );
+                if (typeof CafaoCart.renderCartWidget === 'function') {
+                    CafaoCart.renderCartWidget();
                 }
             }
 
