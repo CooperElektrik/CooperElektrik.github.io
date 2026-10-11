@@ -8,25 +8,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+    <script>
+        (function () {
+            var theme = localStorage.getItem('theme');
+            if (theme === 'dark' || theme === 'light') {
+                document.documentElement.dataset.theme = theme;
+            }
+        })();
+    </script>
 </head>
 
 <body>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
+
+    <p class="admon-announce">I'm working on a few things here...check back soon?</p>
+
     <h2>About me</h2>
     <p>I'm a student with an interest in anime, machine learning, magical girls, military fiction, parasitology, philosophy, and programming.</p>
 
+    <h2>Currently reading</h2>
+    <ul class="books">
+        <li><em>Buông Xả Phiền Não</em> &mdash; HT. Thích Thánh Nghiêm</li>
+        <li><em>Magical Girl Raising Project, Vol. 4: Episodes</em> &mdash; Endou Asari</li>
+
+    </ul>
+
     <h2><svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m8.086 18.611 5.996-14.004a1 1 0 0 1 1.878.677l-.04.11-5.996 14.004a1 1 0 0 1-1.878-.677l.04-.11 5.996-14.004L8.086 18.61Zm-5.793-7.318 4-4a1 1 0 0 1 1.497 1.32l-.083.094L4.414 12l3.293 3.293a1 1 0 0 1-1.32 1.498l-.094-.084-4-4a1 1 0 0 1-.083-1.32l.083-.094 4-4-4 4Zm14-4.001a1 1 0 0 1 1.32-.083l.093.083 4.001 4.001a1 1 0 0 1 .083 1.32l-.083.095-4.001 3.995a1 1 0 0 1-1.497-1.32l.084-.095L19.584 12l-3.293-3.294a1 1 0 0 1 0-1.414Z" fill="#212121"/></svg>Projects</h2>
-    
-    <h3 class="project">Katzen Engine <b>(In Development)</b></h3>
 
-    <p>A simple and opinionated visual novel engine written in Python.</p>
-    
+    <h3 class="project">Eager</h3>
 
-    <h3 class="project">Kätzchen</h3>
+    <p>A modern visual novel engine.</p>
 
-    <p>A Markdown-flavored domain-specific language for the Katzen Engine.</p>
-
-    <a href="https://github.com/CooperElektrik/Katzchen">View on Github</a>
+    <a href="https://github.com/CooperElektrik/Eager">View on Github</a>
 
     <h3 class="project">LanguageLearningApp</h3>
 
@@ -39,10 +52,42 @@
     <p>A simple and impractical terminal text editor written in Windows Batchfile.</p>
 
     <a href="https://github.com/CooperElektrik/editor.bat">View on Github (Archived)</a>
-    
-</body>
+
+    <h2>Misc</h2>
+
+    <p><a href="misc/cafe/index.html">Caf&eacute;</a> &mdash; a website I created as part of an assignment.</p>
+
 <footer>
     <a href="https://github.com/CooperElektrik/CooperElektrik.github.io">source</a>
-    <p>&copy; 2025 Cooper Pham</p>
+    <p>&copy; 2026 CooperElektrik</p>
 </footer>
+
+<script>
+    (function () {
+        var button = document.querySelector('.theme-toggle');
+        var root = document.documentElement;
+
+        function isDark() {
+            if (root.dataset.theme) return root.dataset.theme === 'dark';
+            return window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        function update() {
+            button.textContent = isDark() ? '☀' : '☾';
+        }
+
+        button.addEventListener('click', function () {
+            var next = isDark() ? 'light' : 'dark';
+            root.dataset.theme = next;
+            localStorage.setItem('theme', next);
+            update();
+        });
+
+        window.matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', update);
+
+        update();
+    })();
+</script>
+</body>
 </html>

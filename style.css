@@ -1,6 +1,50 @@
+:root {
+    --bg: #ffffff;
+    --text: #333333;
+    --icon-fill: #212121;
+    --rule: #000000;
+    --project-rule: #ff0000;
+    --project-text: rgb(70, 70, 70);
+    --admon-rule: cornflowerblue;
+    --admon-text: darkslategray;
+    --link: royalblue;
+    --footer-text: #6b6b6b;
+    --toggle-text: #9e9e9e;
+    --toggle-hover: #212121;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --bg: #1a1a1a;
+        --text: #d9d9d9;
+        --icon-fill: #e0e0e0;
+        --rule: #666666;
+        --project-rule: #ff4444;
+        --project-text: #b5b5b5;
+        --admon-text: #8fa8a8;
+        --link: #7ea6f0;
+        --footer-text: #9a9a9a;
+        --toggle-text: #666666;
+        --toggle-hover: #e0e0e0;
+    }
+}
+
+:root[data-theme="dark"] {
+    --bg: #1a1a1a;
+    --text: #d9d9d9;
+    --icon-fill: #e0e0e0;
+    --rule: #666666;
+    --project-rule: #ff4444;
+    --project-text: #b5b5b5;
+    --admon-text: #8fa8a8;
+    --link: #7ea6f0;
+    --footer-text: #9a9a9a;
+    --toggle-text: #666666;
+    --toggle-hover: #e0e0e0;
+}
 
 h2 {
-    border-bottom: black 1px solid;
+    border-bottom: var(--rule) 1px solid;
     padding-bottom: 5px;
     text-indent: 0.2em;
     font-weight: 400;
@@ -10,9 +54,9 @@ h2 {
 
 h3.project {
     padding-bottom: 5px;
-    border-left: #ff0000 4px solid;
+    border-left: var(--project-rule) 4px solid;
     padding-left: 1em;
-    color: rgb(70, 70, 70);
+    color: var(--project-text);
     font-weight: 500;
 }
 
@@ -22,8 +66,8 @@ ul.books {
 }
 
 p.admon-announce {
-    color:darkslategray;
-    border-left: cornflowerblue 4px solid;
+    color: var(--admon-text);
+    border-left: var(--admon-rule) 4px solid;
     padding-left: 1em;
 }
 
@@ -36,8 +80,8 @@ body {
     font-weight: 300;
     font-size: 1.1em;
     line-height: 1.7;
-    background-color: #ffffff;
-    color: #333;
+    background-color: var(--bg);
+    color: var(--text);
     text-align: justify;
 }
 
@@ -45,8 +89,12 @@ svg {
     padding-right: 0.2em;
 }
 
+svg path {
+    fill: var(--icon-fill);
+}
+
 a {
-    color: royalblue;
+    color: var(--link);
     text-decoration: none;
 }
 
@@ -56,8 +104,27 @@ a:hover {
 }
 
 footer {
-    color: #6b6b6b;
+    color: var(--footer-text);
     text-align: center;
     font-size: 0.8em;
     padding: 0 0;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 12px;
+    right: 14px;
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1;
+    padding: 4px 8px;
+    background: none;
+    border: none;
+    color: var(--toggle-text);
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--toggle-hover);
 }

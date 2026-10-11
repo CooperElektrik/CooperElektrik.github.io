@@ -1,3 +1,4 @@
 markdown-it-py
 mdit-py-plugins
 beautifulsoup4
+linkify-it-py
